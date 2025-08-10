@@ -3,181 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clube Dezenove</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Pacifico&display=swap');
-
-        body {
-            margin: 0;
-            padding: 0;
-            color: white;
-            font-family: 'Orbitron', sans-serif;
-            text-align: center;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: url('https://i.imgur.com/waLj7Eb.jpeg') no-repeat center center fixed;
-            background-size: cover;
-            position: relative;
-            animation: backgroundMove 20s ease-in-out infinite alternate;
-        }
-
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.65);
-            backdrop-filter: blur(2px);
-        }
-
-        .content {
-            position: relative;
-            padding: 20px;
-            max-width: 900px;
-            animation: glow 3s infinite alternate;
-        }
-
-        h1 {
-            font-family: 'Pacifico', cursive;
-            font-size: 2.5rem;
-            color: #ff00ff;
-            text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
-        }
-
-        p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            text-shadow: 0 0 5px #00ffff;
-        }
-
-        a {
-            color: purple;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            text-shadow: 0 0 5px purple, 0 0 10px #ff00ff;
-        }
-
-        .discord-btn {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 28px;
-            font-size: 1.2rem;
-            color: white;
-            background: rgba(138, 43, 226, 0.8);
-            border: 2px solid #ff00ff;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
-            box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
-            transition: 0.3s ease;
-        }
-        .discord-btn:hover {
-            background: rgba(138, 43, 226, 1);
-            box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff;
-            transform: scale(1.05);
-        }
-
-        /* Lista de moderadores */
-        .moderators {
-            list-style: none;
-            padding: 0;
-            margin-top: 15px;
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            flex-wrap: wrap;
-        }
-
-        .moderators li {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 1.1rem;
-            text-shadow: 0 0 5px #ff00ff;
-        }
-
-        .moderators img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border: 2px solid #ff00ff;
-            box-shadow: 0 0 10px #ff00ff;
-        }
-
-        @keyframes glow {
-            0% { text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff; }
-            50% { text-shadow: 0 0 20px #00ff00, 0 0 40px #ffff00; }
-            100% { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff00ff; }
-        }
-
-        @keyframes backgroundMove {
-            0% { background-position: center center; }
-            50% { background-position: 52% 48%; }
-            100% { background-position: center center; }
-        }
-
-        @media (max-width: 600px) {
-            h1 { font-size: 1.8rem; }
-            p { font-size: 1rem; }
-        }
-    </style>
+    <title>Clube Dezenove - A Vibe dos Anos 80</title>
 </head>
-<body>
-    <div class="content">
-        <h1>Bem-vindos ao <a href="https://discord.gg/qUJgXWYwu2" target="_blank">Clube Dezenove</a>!</h1>
-        <p>
-            Olá a todos! Sejam muito bem-vindos ao <a href="https://discord.gg/qUJgXWYwu2" target="_blank">Clube Dezenove</a>!  
-            Aqui é um servidor voltado para o público adolescente. Somos uma comunidade, uma família – torne-se parte dela, entre!  
+<body style="background-color: #000000; color: #FFFFFF; font-family: 'Courier New', Courier, monospace; text-align: center; background-image: url('https://i.imgur.com/waLj7Eb.jpeg'); background-size: cover; background-position: center; padding: 20px;">
+
+    <div style="background-color: rgba(0, 0, 0, 0.7); border: 3px solid #FF00FF; box-shadow: 0 0 15px #FF00FF, 0 0 25px #00FFFF; padding: 20px; max-width: 800px; margin: auto;">
+
+        <h1 style="font-family: 'Arial Black', Gadget, sans-serif; font-size: 3rem; color: #FF00FF; text-shadow: 0 0 5px #FF00FF, 0 0 10px #FF00FF, 0 0 20px #00FFFF; text-transform: uppercase;">
+            <marquee behavior="scroll" direction="left" scrollamount="6">
+                <a href="https://discord.gg/qUJgXWYwu2" target="_blank" style="color: #FF00FF; text-decoration: none;">Bem-vindos ao Clube Dezenove!</a>
+            </marquee>
+        </h1>
+
+        <p style="font-size: 1.2rem; line-height: 1.6; color: #FFFFFF; text-shadow: 0 0 5px #00FFFF;">
+            Olá a todos! Sejam muito bem-vindos ao <a href="https://discord.gg/qUJgXWYwu2" target="_blank" style="color: #00FFFF; text-decoration: none; font-weight: bold;">Clube Dezenove</a>!  
+            Aqui é um servidor voltado para o público adolescente. Somos uma comunidade, uma família – torne-se parte dela, entre!
         </p>
 
-        <a href="https://discord.gg/qUJgXWYwu2" target="_blank" class="discord-btn">Entrar no Clube Dezenove</a>
+        <a href="https://discord.gg/qUJgXWYwu2" target="_blank" style="display: inline-block; margin-top: 20px; padding: 15px 30px; font-size: 1.5rem; color: #FFFFFF; background-color: #7D00A3; border: 3px solid #FF00FF; border-radius: 10px; text-decoration: none; font-weight: bold; text-shadow: 0 0 8px #FF00FF; box-shadow: 0 0 10px #FF00FF, inset 0 0 10px #FF00FF;">
+            Entrar no Clube Dezenove
+        </a>
 
-        <p>
+        <h2 style="font-size: 2rem; color: #00FF00; margin-top: 40px; text-shadow: 0 0 5px #00FF00;">
             Nossos moderadores:
-        </p>
-        <ul class="moderators">
-            <li><img src="https://i.imgur.com/djv6DxM.png" alt="Zeus"> Zeus</li>
-            <li><img src="https://i.imgur.com/iQOQoKl.png" alt="Porku"> Porku</li>
-             <li><img src="https://i.imgur.com/78oO4KX.png" alt="Terceiro"> Terceiro</li>   
-            <li><img src="https://i.imgur.com/rjulRai.png" alt="Azziul"> Azziul</li>   
-            
-        </ul>
-        <p>
+        </h2>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 10px;">
+            <div style="text-align: center;">
+                <img src="https://i.imgur.com/djv6DxM.png" alt="Zeus" style="width: 60px; height: 60px; border-radius: 50%; border: 3px solid #FF00FF; box-shadow: 0 0 10px #FF00FF;">
+                <p style="color: #FFFFFF; margin-top: 5px;">Zeus</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="https://i.imgur.com/iQOQoKl.png" alt="Porku" style="width: 60px; height: 60px; border-radius: 50%; border: 3px solid #FF00FF; box-shadow: 0 0 10px #FF00FF;">
+                <p style="color: #FFFFFF; margin-top: 5px;">Porku</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="https://i.imgur.com/78oO4KX.png" alt="Terceiro" style="width: 60px; height: 60px; border-radius: 50%; border: 3px solid #FF00FF; box-shadow: 0 0 10px #FF00FF;">
+                <p style="color: #FFFFFF; margin-top: 5px;">Terceiro</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="https://i.imgur.com/rjulRai.png" alt="Azziul" style="width: 60px; height: 60px; border-radius: 50%; border: 3px solid #FF00FF; box-shadow: 0 0 10px #FF00FF;">
+                <p style="color: #FFFFFF; margin-top: 5px;">Azziul</p>
+            </div>
+        </div>
+
+        <h2 style="font-size: 2rem; color: #00FF00; margin-top: 30px; text-shadow: 0 0 5px #00FF00;">
             Nossos Staff:
-        </p>
-        <ul class="moderators">
-           <li><img src="https://i.imgur.com/t9VlDF2.png" alt="Nagel"> Nagel</li>
-            <li><img src="https://i.imgur.com/ZxskZaN.png" alt="Mr.Shark"> Mr.Shark</li>
-             <li><img src="https://i.imgur.com/SdD868E.png" alt="𝘩𝘢𝘺𝘶𝘬𝘪♱⋆"> 𝘩𝘢𝘺𝘶𝘬𝘪♱⋆</li>
-            
-        </ul>
-<!-- Player de áudio do YouTube (invisível, autoplay a partir de 5 segundos) -->
-<iframe width="0" height="0" 
-        src="https://www.youtube.com/embed/v2FALkc9N40?autoplay=1&start=5&controls=0&showinfo=0&rel=0&modestbranding=1&loop=1&enablejsapi=1&mute=0" 
-        frameborder="0" 
-        allow="autoplay; encrypted-media" 
-        allowfullscreen>
-</iframe>
-        <p>
+        </h2>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 10px;">
+            <div style="text-align: center;">
+                <img src="https://i.imgur.com/t9VlDF2.png" alt="Nagel" style="width: 60px; height: 60px; border-radius: 50%; border: 3px solid #00FFFF; box-shadow: 0 0 10px #00FFFF;">
+                <p style="color: #FFFFFF; margin-top: 5px;">Nagel</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="https://i.imgur.com/ZxskZaN.png" alt="Mr.Shark" style="width: 60px; height: 60px; border-radius: 50%; border: 3px solid #00FFFF; box-shadow: 0 0 10px #00FFFF;">
+                <p style="color: #FFFFFF; margin-top: 5px;">Mr.Shark</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="https://i.imgur.com/SdD868E.png" alt="hayuki" style="width: 60px; height: 60px; border-radius: 50%; border: 3px solid #00FFFF; box-shadow: 0 0 10px #00FFFF;">
+                <p style="color: #FFFFFF; margin-top: 5px;">𝘩𝘢𝘺𝘶𝘬𝘪♱⋆</p>
+            </div>
+        </div>
+
+        <!-- Player de áudio continua aqui -->
+        <iframe width="0" height="0" src="https://www.youtube.com/embed/v2FALkc9N40?autoplay=1&start=5&controls=0&showinfo=0&rel=0&modestbranding=1&loop=1&enablejsapi=1&mute=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+        <p style="margin-top: 40px; font-size: 0.9rem; color: #AAAAAA; border-top: 1px solid #FF00FF; padding-top: 15px;">
             Seguimos estritamente as leis do Brasil, de Portugal e de qualquer país em que um membro deste servidor resida,  
-            assim como os <a href="https://discord.com/terms" target="_blank">Termos de Serviço do Discord</a>.
+            assim como os <a href="https://discord.com/terms" target="_blank" style="color: #00FFFF;">Termos de Serviço do Discord</a>.
         </p>
-           <p>
+        <p style="font-size: 0.9rem; color: #AAAAAA;">
               <strong>Contato oficial para autoridades e imprensa:</strong><br>
-                <a href="mailto:Katanamfai@gmail.com">Katanamfai@gmail.com</a><br>
+                <a href="mailto:Katanamfai@gmail.com" style="color: #00FFFF;">Katanamfai@gmail.com</a><br>
                 Este e-mail deve ser utilizado exclusivamente para assuntos legais,  
                 policiais, judiciais ou de cobertura jornalística.  
-                 </p>
+        </p>
     </div>
+
 </body>
 </html>
-
