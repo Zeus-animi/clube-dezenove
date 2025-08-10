@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube Dezenove</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Pacifico&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://i.imgur.com/waLj7Eb.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            animation: backgroundMove 20s ease-in-out infinite alternate;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(2px);
+        }
+
+        .content {
+            position: relative;
+            padding: 20px;
+            max-width: 900px;
+            animation: glow 3s infinite alternate;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5rem;
+            color: #ff00ff;
+            text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-shadow: 0 0 5px #00ffff;
+        }
+
+        a {
+            color: purple;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-shadow: 0 0 5px purple, 0 0 10px #ff00ff;
+        }
+
+        .discord-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 28px;
+            font-size: 1.2rem;
+            color: white;
+            background: rgba(138, 43, 226, 0.8);
+            border: 2px solid #ff00ff;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+            box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+            transition: 0.3s ease;
+        }
+        .discord-btn:hover {
+            background: rgba(138, 43, 226, 1);
+            box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+            transform: scale(1.05);
+        }
+
+        /* Lista de moderadores */
+        .moderators {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .moderators li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+            text-shadow: 0 0 5px #ff00ff;
+        }
+
+        .moderators img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid #ff00ff;
+            box-shadow: 0 0 10px #ff00ff;
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff; }
+            50% { text-shadow: 0 0 20px #00ff00, 0 0 40px #ffff00; }
+            100% { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff00ff; }
+        }
+
+        @keyframes backgroundMove {
+            0% { background-position: center center; }
+            50% { background-position: 52% 48%; }
+            100% { background-position: center center; }
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            p { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Bem-vindos ao <a href="https://discord.gg/qUJgXWYwu2" target="_blank">Clube Dezenove</a>!</h1>
+        <p>
+            Olá a todos! Sejam muito bem-vindos ao <a href="https://discord.gg/qUJgXWYwu2" target="_blank">Clube Dezenove</a>!  
+            Aqui é um servidor voltado para o público adolescente. Somos uma comunidade, uma família – torne-se parte dela, entre!  
+        </p>
+
+        <a href="https://discord.gg/qUJgXWYwu2" target="_blank" class="discord-btn">Entrar no Clube Dezenove</a>
+
+        <p>
+            Nossos moderadores são:
+        </p>
+        <ul class="moderators">
+            <li><img src="https://i.imgur.com/djv6DxM.png" alt="Zeus"> Zeus</li>
+            <li><img src="https://i.imgur.com/iQOQoKl.png" alt="Porku"> Porku</li>
+            <li><img src="https://i.imgur.com/78oO4KX.png" alt="Terceiro"> Terceiro</li>
+        </ul>
+
+        <p>
+            Seguimos estritamente as leis do Brasil, de Portugal e de qualquer país em que um membro deste servidor resida,  
+            assim como os <a href="https://discord.com/terms" target="_blank">Termos de Serviço do Discord</a>.
+        </p>
+    </div>
+</body>
+</html>
+
