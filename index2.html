@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfis - Clube Dezenove</title>
+    <style>
+        /* Estilos opcionais para deixar o <summary> mais bonito, mas a funcionalidade é 100% HTML */
+        summary {
+            cursor: pointer;
+            display: inline-block;
+            color: #00FFFF;
+            font-weight: bold;
+            text-shadow: 0 0 5px #00FFFF;
+            margin-top: 10px;
+            padding: 2px 5px;
+            border-radius: 5px;
+            transition: all 0.2s ease-in-out;
+            outline: none; /* Remove o contorno padrão ao clicar em alguns navegadores */
+        }
+
+        summary:hover {
+            background-color: rgba(0, 255, 255, 0.1);
+            border: 1px solid #00FFFF;
+            padding: 1px 4px; /* Ajusta o padding para compensar a borda */
+        }
+        
+        /* Cor rosa para os moderadores */
+        .mod-summary {
+            color: #FF00FF;
+            text-shadow: 0 0 5px #FF00FF;
+        }
+
+        .mod-summary:hover {
+            background-color: rgba(255, 0, 255, 0.1);
+            border: 1px solid #FF00FF;
+        }
+
+        /* Remove o marcador de triângulo padrão */
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+</head>
+<body style="background-color: #000000; color: #FFFFFF; font-family: 'Courier New', Courier, monospace; text-align: center; background-image: url('https://i.imgur.com/waLj7Eb.jpeg'); background-size: cover; background-position: center; padding: 20px;">
+
+    <div style="background-color: rgba(0, 0, 0, 0.75); border: 3px solid #00FFFF; box-shadow: 0 0 15px #00FFFF, 0 0 25px #FF00FF; padding: 20px; max-width: 800px; margin: auto;">
+
+        <h1 style="font-family: 'Arial Black', Gadget, sans-serif; font-size: 3rem; color: #00FF00; text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 20px #FF00FF; text-transform: uppercase;">
+            Perfis da Equipe
+        </h1>
+
+        <p style="font-size: 1.2rem; line-height: 1.6; color: #FFFFFF; text-shadow: 0 0 5px #FF00FF;">
+            Conheça um pouco mais sobre quem faz o Clube Dezenove acontecer. Clique em "[Sobre mim]" para ler a bio.
+        </p>
+
+        <!-- Seção de Perfis -->
+        <div style="margin-top: 40px; text-align: left;">
+
+            <!-- Perfil Zeus -->
+            <div id="Zeus" style="margin-bottom: 40px; padding: 15px; border: 2px solid #FF00FF; border-radius: 10px; box-shadow: inset 0 0 10px #FF00FF;">
+                <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 20px;">
+                    <img src="https://i.imgur.com/djv6DxM.png" alt="Zeus" style="width: 80px; height: 80px; border-radius: 50%; border: 3px solid #FF00FF;">
+                    <h2 style="font-family: 'Arial Black', Gadget, sans-serif; color: #FF00FF; text-shadow: 0 0 5px #FF00FF;">Zeus</h2>
+                </div>
+                <details>
+                    <summary class="mod-summary">[Sobre mim]</summary>
+                    <p style="margin-top: 10px; color: #FFFFFF; line-height: 1.5;">O nosso pilar. Zeus garante que a ordem prevaleça, sempre com um olho no bem-estar da comunidade. Se precisar de uma direção ou ajuda com as regras, ele é a pessoa certa. Sua paixão é construir um ambiente justo para todos.</p>
+                </details>
+            </div>
+
+            <!-- Perfil Porku -->
+            <div id="Porku" style="margin-bottom: 40px; padding: 15px; border: 2px solid #FF00FF; border-radius: 10px; box-shadow: inset 0 0 10px #FF00FF;">
+                <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 20px;">
+                    <img src="https://i.imgur.com/iQOQoKl.png" alt="Porku" style="width: 80px; height: 80px; border-radius: 50%; border: 3px solid #FF00FF;">
+                    <h2 style="font-family: 'Arial Black', Gadget, sans-serif; color: #FF00FF; text-shadow: 0 0 5px #FF00FF;">Porku</h2>
+                </div>
+                <details>
+                    <summary class="mod-summary">[Sobre mim]</summary>
+                    <p style="margin-top: 10px; color: #FFFFFF; line-height: 1.5;">A alma divertida do clube. Porku está sempre pronto para uma boa conversa e garante que o astral do servidor esteja lá em cima. Se o tédio bater, procure por ele; a diversão é garantida.</p>
+                </details>
+            </div>
+            
+            <!-- Adicione os outros perfis seguindo o mesmo padrão... -->
+
+            <!-- Perfil Terceiro -->
+            <div id="Terceiro" style="margin-bottom: 40px; padding: 15px; border: 2px solid #FF00FF; border-radius: 10px; box-shadow: inset 0 0 10px #FF00FF;">
+                <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 20px;">
+                    <img src="https://i.imgur.com/78oO4KX.png" alt="Terceiro" style="width: 80px; height: 80px; border-radius: 50%; border: 3px solid #FF00FF;">
+                    <h2 style="font-family: 'Arial Black', Gadget, sans-serif; color: #FF00FF; text-shadow: 0 0 5px #FF00FF;">Terceiro</h2>
+                </div>
+                <details>
+                    <summary class="mod-summary">[Sobre mim]</summary>
+                    <p style="margin-top: 10px; color: #FFFFFF; line-height: 1.5;">Observador e atencioso, Terceiro tem um talento especial para perceber o que a comunidade precisa. Ele trabalha nos bastidores para garantir que tudo corra bem e que as sugestões de todos sejam ouvidas.</p>
+                </details>
+            </div>
+
+            <!-- Perfil Azziul -->
+            <div id="Azziul" style="margin-bottom: 40px; padding: 15px; border: 2px solid #FF00FF; border-radius: 10px; box-shadow: inset 0 0 10px #FF00FF;">
+                <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 20px;">
+                    <img src="https://i.imgur.com/rjulRai.png" alt="Azziul" style="width: 80px; height: 80px; border-radius: 50%; border: 3px solid #FF00FF;">
+                    <h2 style="font-family: 'Arial Black', Gadget, sans-serif; color: #FF00FF; text-shadow: 0 0 5px #FF00FF;">Azziul</h2>
+                </div>
+                <details>
+                    <summary class="mod-summary">[Sobre mim]</summary>
+                    <p style="margin-top: 10px; color: #FFFFFF; line-height: 1.5;">Amigável e prestativo, Azziul é o ponto de contato para quem chega. Ele ajuda os novos membros a se sentirem em casa e está sempre disponível para tirar dúvidas e oferecer suporte.</p>
+                </details>
+            </div>
+
+            <!-- Perfil Nagel -->
+            <div id="Nagel" style="margin-bottom: 40px; padding: 15px; border: 2px solid #00FFFF; border-radius: 10px; box-shadow: inset 0 0 10px #00FFFF;">
+                <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 20px;">
+                    <img src="https://i.imgur.com/t9VlDF2.png" alt="Nagel" style="width: 80px; height: 80px; border-radius: 50%; border: 3px solid #00FFFF;">
+                    <h2 style="font-family: 'Arial Black', Gadget, sans-serif; color: #00FFFF; text-shadow: 0 0 5px #00FFFF;">Nagel</h2>
+                </div>
+                <details>
+                    <summary>[Sobre mim]</summary>
+                    <p style="margin-top: 10px; color: #FFFFFF; line-height: 1.5;">Com um foco em eventos e atividades, Nagel é o organizador de grande parte da diversão. Fique de olho nos seus anúncios para não perder noites de jogos, concursos e outras atividades incríveis.</p>
+                </details>
+            </div>
+
+            <!-- Perfil Mr.Shark -->
+            <div id="MrShark" style="margin-bottom: 40px; padding: 15px; border: 2px solid #00FFFF; border-radius: 10px; box-shadow: inset 0 0 10px #00FFFF;">
+                <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 20px;">
+                    <img src="https://i.imgur.com/ZxskZaN.png" alt="Mr.Shark" style="width: 80px; height: 80px; border-radius: 50%; border: 3px solid #00FFFF;">
+                    <h2 style="font-family: 'Arial Black', Gadget, sans-serif; color: #00FFFF; text-shadow: 0 0 5px #00FFFF;">Mr.Shark</h2>
+                </div>
+                <details>
+                    <summary>[Sobre mim]</summary>
+                    <p style="margin-top: 10px; color: #FFFFFF; line-height: 1.5;">Técnico e criativo, Mr.Shark cuida dos bots e das integrações que fazem o servidor ser único. Se algo parece "mágico" no servidor, provavelmente foi ele quem fez acontecer.</p>
+                </details>
+            </div>
+
+            <!-- Perfil hayuki -->
+            <div id="hayuki" style="margin-bottom: 40px; padding: 15px; border: 2px solid #00FFFF; border-radius: 10px; box-shadow: inset 0 0 10px #00FFFF;">
+                <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 20px;">
+                    <img src="https://i.imgur.com/SdD868E.png" alt="hayuki" style="width: 80px; height: 80px; border-radius: 50%; border: 3px solid #00FFFF;">
+                    <h2 style="font-family: 'Arial Black', Gadget, sans-serif; color: #00FFFF; text-shadow: 0 0 5px #00FFFF;">𝘩𝘢𝘺𝘶𝘬𝘪♱⋆</h2>
+                </div>
+                <details>
+                    <summary>[Sobre mim]</summary>
+                    <p style="margin-top: 10px; color: #FFFFFF; line-height: 1.5;">Curadora da estética e da vibe do clube, Hayuki cuida da parte visual e da atmosfera. Seu toque artístico está presente nos pequenos detalhes que tornam o Clube Dezenove um lugar especial e com estilo.</p>
+                </details>
+            </div>
+            
+        </div>
+     <!-- Val -->
+<div id="Val" style="margin-bottom: 40px; padding: 15px; border: 2px solid #00FFFF; border-radius: 10px; box-shadow: inset 0 0 10px #00FFFF; text-align: left;">
+    <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 20px;">
+        <img src="https://i.imgur.com/tlARO2V.png" alt="NOME_AQUI" style="width: 80px; height: 80px; border-radius: 50%; border: 3px solid #00FFFF;">
+        <h2 style="font-family: 'Arial Black', Gadget, sans-serif; color: #00FFFF; text-shadow: 0 0 5px #00FFFF; margin: 0;">Val</h2>
+    </div>
+    <details>
+        <summary>[Sobre mim]</summary>
+        <p style="margin-top: 10px; color: #FFFFFF; line-height: 1.5;">
+    Oioi, eu sou a Val mas vcs podem me chamar de jason ou karakoll, tanto faz. Se vc precisar de qualquer ajuda no servidor, me chama. Aproveite, anjinho🤗
+        </p>
+    </details>
+</div>
+
+        <!-- Botão Voltar -->
+        <a href="index.html" style="display: inline-block; margin-top: 20px; padding: 15px 30px; font-size: 1.5rem; color: #FFFFFF; background-color: #008080; border: 3px solid #00FFFF; border-radius: 25px; text-decoration: none; font-weight: bold; text-shadow: 0 0 8px #00FFFF; box-shadow: 0 0 10px #00FFFF, inset 0 0 10px #00FFFF;">
+            &laquo; Voltar
+        </a>
+
+    </div>
+
+</body>
+</html>
